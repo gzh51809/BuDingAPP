@@ -1,0 +1,35 @@
+.am-wingblank.am-wingblank-lg{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.sub-title {
+    color: #888;
+    font-size: 14px;
+    padding: 15px 0 9px 15px;
+  }
+  .not-square-grid .am-grid-icon {
+    width: 40px;
+    height: 60px;
+  }
+  .my-carousel .v-item {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+  }
+  .Carousel{
+    background: #fff;
+    margin: 9px 10px;
+    margin-left: 9px;
+  }
+  .cou{
+    float:left;
+    margin-top: 9px;
+  }
+  p{
+      margin:0;
+
+  }
+  .cou p{
+      margin-left:10px;
+      color: #FF5A00;
+  }
