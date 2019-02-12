@@ -1,12 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {HashRouter, Route, Switch} from 'react-router-dom';
+import Home from './com/home';
+import Detail from './com/detail';
+import App from './com/App';
+
+
+const BasicRoute = () => (
+    <HashRouter>
+        <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/detail" component={Detail}/>
+            <Route exact path="/App" component={Detail}/>
+        </Switch>
+    </HashRouter>
+);
+
+
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+export default BasicRoute;
