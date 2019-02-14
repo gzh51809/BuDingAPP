@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#000000" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>布丁生活</title>
-
+  <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"></script> -->
   <!-- set `maximum-scale` for some compatibility issues -->
   <meta name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
@@ -27,6 +27,11 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4IU3oIAMpZhfWZsMu7xzqBBAf6vMHcoa"></script>
+                <script>
+                    window.BMap = BMap;
+                </script>
+    </div>
   </body>
 </html>

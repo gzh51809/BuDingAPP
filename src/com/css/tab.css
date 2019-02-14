@@ -1,0 +1,22 @@
+#tab-bar.demo {
+    display: flex;
+    flex-direction: column;
+  }
+  #tab-bar .demoName {
+    height: 40px;
+  }
+  #tab-bar .demo-preview-item .am-tab-bar {
+    background-color: white;
+  }
+  .tab1{
+    width: 22px;
+    height: 22px;
+    background: url(../img/tab-1.jpg) no-repeat;
+    background-size:22px 22px;
+  }
+  .tab11{
+    width: 22px;
+    height: 22px;
+    background: url(../img/tab-11.jpg) no-repeat;
+    background-size:22px 22px;
+  }

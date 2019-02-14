@@ -2,7 +2,7 @@ import React from 'react';
 import './css/home.css';
 import { Carousel, WingBlank } from 'antd-mobile';
 import { Grid } from 'antd-mobile';
-
+import TabBarExample from './tab';
 
 
 
@@ -42,7 +42,23 @@ class home extends React.Component {
             }]
         };
     }
+    
     componentDidMount() {
+        
+    //     var map = new BMap.Map("allmap");
+    // var point = new BMap.Point(116.331398,39.897445);
+    // map.centerAndZoom(point,12);
+
+    // function myFun(result) {
+    // var cityName = result.name;
+    // map.setCenter(cityName);
+    // alert("当前定位城市:" + cityName);
+    //     }
+    // var myCity = new BMap.LocalCity();
+    // myCity.get(myFun);
+
+
+
         // simulate img loading
         setTimeout(() => {
             this.setState({
@@ -56,8 +72,8 @@ class home extends React.Component {
                 <Carousel
                     autoplay={true}
                     infinite
-                    beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-                    afterChange={index => console.log('slide to', index)}
+                    // beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
+                    // afterChange={index => console.log('slide to', index)}
                 >
                     {this.state.arr.map(val => (
                         <a
@@ -97,8 +113,9 @@ class home extends React.Component {
                         </Carousel>
                     </div>
                 </WingBlank>
-
-            </WingBlank>
+                <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+                <TabBarExample/>
+            </WingBlank >
 
         );
     }
